@@ -1,0 +1,331 @@
+/*BOOK-PAG*/
+.sec-book > .container{
+    display: flex;
+    justify-content: space-between;
+   
+    padding: 5rem 0 0 4rem;
+    overflow-x: hidden;
+}
+
+.book-conheca{
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+.book-initial{
+    padding:  5rem 0;
+}
+
+#text-book-initial{
+    color: var(--text-color);
+    padding: 3rem 0 0 0;
+}
+
+#paragrafo-initial-book{
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#text-book-initial::after{
+    content: '|';
+    margin-left: 0.4rem;
+    opacity: 1;
+    animation: Writer .7s infinite;
+}
+
+.img-Selecao{
+    padding: 0 4rem 4rem 0;
+}
+
+@keyframes Writer{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+/*BOOK-PAG*/
+
+/*BOOK-CARDS*/
+.book-cards{
+    padding: 0 20rem 0 20rem;    
+}
+
+h1{
+    text-align: center;
+}
+
+.book-cards h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.book-cards .container{
+    display: flex;
+    justify-content: space-between;
+
+    text-align: center;
+    align-items: center;
+}
+
+.card{
+    width: 300px;
+    height: 600px;
+
+    background-color: var(--color-card);
+
+    border-radius: 15px;
+    margin-bottom: 10px;
+
+}
+
+.card-img > img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.card-title{
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    text-align: center;
+
+    width: 90%;
+    height: 60px;
+
+    margin: auto;
+    margin-top: 10px;
+
+    font-weight: 900;
+    font-size: 20px;
+
+    color: var(--text-color);
+}
+
+.card-content{
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+    overflow: hidden;
+
+    width: 90%;
+    height: auto;
+
+    margin: auto;
+    margin-top: 10px;
+
+    font-weight: 600;
+
+    color: var(--text-color);
+}
+
+.card-link{
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.card-link > button{
+    border: none;
+    padding: 0 3rem;
+    
+    text-align: center;
+    text-decoration: none;  
+    
+    color: var(--text-color);
+    
+    font-size: 2rem;
+}
+
+.card-link > button:before {
+    content: "";
+
+    position: absolute;
+    visibility: hidden;
+
+    bottom: 0;
+    left: 0;
+
+    -webkit-transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+} 
+
+.card-link > button:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.card-link > button {
+    cursor: pointer;
+
+    background: var(--color-button);
+    color: var(--text-color);
+
+    border-radius: 5px;
+    text-decoration: none;
+
+    transition: 0.5s;
+}
+
+.card-link > button:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background: var(--color-card);
+    color: var(--text-color);
+}
+/*BOOK-CARDS*/
+
+/*BOOK-PAG-RESPONSIVO*/
+@media only screen and (max-width: 2500px){
+    .book-cards .container{
+        width: 70%;    }
+}
+
+@media only screen and (max-width: 2500px){
+    .book-cards .container{
+        width: 80%;    }
+}
+
+@media only screen and (max-width: 2000px){
+    .book-cards .container{
+        width: 100%;    }
+}
+
+@media only screen and (max-width:1850px){
+    .book-cards{
+        padding: 0 10rem 0 10rem;
+    }  
+}
+
+@media only screen and (max-width:1550px){
+    .book-cards{
+        padding: 0 0rem 1rem  0rem;
+    }
+}
+
+@media only screen and (max-width:1250px){
+    .book-cards .container{
+        display: flex;
+        flex-flow: row wrap;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .book-cards .container{
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width:1100px){
+    .book-cards .container{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width:1050px){
+    .book-cards .container{
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width:950px){
+    .book-cards .container{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:860px){
+    .book-cards .container{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .sec-book .container{
+        display: block;
+        flex-direction: column;    
+    }
+
+    .sec-book .book-initial{
+        padding: 0.0625rem 0 0 2rem;
+    }
+
+    .sec-book p{
+        text-align: center;
+    }
+    
+    .container{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:760px){
+    .book-cards .container{
+        width: 90%;
+    }
+    
+    .book-cards .container{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .book-initial{
+        margin-right: 3rem;
+    }
+
+    #text-book-initial{
+        color: var(--text-color);
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .container .book-initial{
+        margin-bottom: -25rem;
+    }
+
+    .book-initial{
+        margin: 0rem 2rem 0rem 0rem;
+    }
+
+    .img-Selecao{
+        visibility: hidden;
+    }
+
+    .book-conheca{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .book-initial{
+        margin-top: -5rem;
+        margin-right: 5rem;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .container{
+    padding-right: 5rem;
+    }
+    
+    h1{
+        font-size: 1.5rem;
+    }
+    
+    #paragrafo-initial-book{
+        font-weight: 200;
+    }
+}
+/*BOOK-PAG-RESPONSIVO*/

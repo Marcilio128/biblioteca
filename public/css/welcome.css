@@ -1,0 +1,145 @@
+/*SECTION-INITIAL*/
+.sec-initial > .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-section-initial{
+    padding: 10rem 0 0 4rem;
+    max-width: 100%;
+}
+
+.sec-initial h3{
+    margin-bottom: 1rem;
+}
+
+.animation{
+    right: 1%;
+    z-index: -1000;
+    
+    width: 550px; 
+    height: 550px;
+}
+/*SECTION-INITIAL*/
+
+/*SECTION-MEET*/
+.sec-meet{
+    text-align: center;
+}
+
+.title-meet{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+
+}
+.img-acervo{
+    width: 18rem; 
+    height: 18rem;
+
+    border-radius: 20rem;
+    margin-bottom: 1rem;
+}
+
+.meet-text > p{
+    margin-bottom: 5rem;
+}
+/*SECTION-MEET*/
+
+/*Responsividade*/
+@media only screen and (max-width: 950px){
+    .text-section-initial{
+        padding: 1rem 1rem 0 4rem;
+        max-width: 100%;
+    }
+
+    h2, h3{
+        font-size: 2rem;
+    }
+    
+    p{
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 820px){
+    .text-section-initial{
+        padding: 5rem 1rem 0 1rem;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    h2, h3{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 0.9rem;
+    }
+
+    .sec-initial .container{
+        display: block;
+        flex-direction: column;
+    }
+
+    .animation-initial{
+        display: flex;
+        justify-content: center;
+    }
+
+    .animation{
+        width: 650px; 
+        height: 650px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    h2, h3{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 0.85rem;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .title-meet{
+        font-size: 2.5rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 0.99rem;
+    }
+
+    .meet-text > p{
+        font-size: 0.80rem;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    h2, h3{
+        font-size: 1.2rem;
+    }
+
+    .text-section-initial p{
+        font-size: 0.90rem;
+    }
+
+    .animation-initial > .animation{
+        margin-top: -5rem;
+        margin-bottom: -5rem;
+    }
+
+    .title-meet{
+        font-size: 1.5rem;
+    }
+    
+    .meet-text > p{
+        font-size: 0.80rem;
+    }
+}
+/*Responsividade*/
